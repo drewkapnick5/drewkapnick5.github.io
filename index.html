@@ -1,34 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+
+<head prefix="og: http://ogp.me/ns#">
+    <title>Drew Kapnick | Web Developer &amp; UX Enthusiast</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Drew Kapnick" />
+    <link rel="shortcut icon" href="img/dk_logo_wix2.PNG">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/scss.scss">
+    <link rel="stylesheet" type="text/css" href="fonts/Calibre/Calibre-Regular.woff">
+    <link rel="stylesheet" type="text/css" href="fonts/SFMono">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body>
-  <div class="contact-page">
-    <h2>Drew Kapnick</h2>
-    <section id="about"></section>
-    <div class="info">
-      <h3>About Me</h3>
-      <p>Hello! I'm Drew, a computer engineer based in South-Eastern, MI.</p>
-      <p>I recently graduated from Michigan State University, with a BS in Computer Engineering.</p>
-      <p>I am currently searching for opportunities around the country and would love to get in touch.</p>
-      <p>Feel free to contact me below!</p>
-    </div>
 
-    
-    <div class="social-icons">
-      <a href="Drew Kapnick Resume May 2020.pdf" download><i class="fas fa-portrait"></i></a>
-      <a href="tel:517-920-3239"><i class="fas fa-phone-square-alt"></i></a>
-      <a href="mailto:akapnick5@gmail.com"><i class="fas fa-at"></i></a>
-      <a href="https://twitter.com/DrewKapnick5"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/drewkapnick5/"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com/drewkapnick5"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/drew-kapnick-9891a6153/"><i class="fab fa-linkedin-in"></i></a>
-    </div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100">
+    <header>
+        <div class="menu-btn" id="mbtn">
+            <div class="menu-btn_burger"></div>
+        </div>
+        <nav class="menu-nav">
+            <ul class="nav-list">
+                <li><a id="home" href="index.html" class="nav-link">Home</a></li>
+                <li><a id="about" href="#about" class="nav-link">About</a></li>
+                <!-- <li><a id="services" href="#services" class="nav-link">Services</a></li>
+                <li><a id="portfolio" href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a id="experience" href="#experience" class="nav-link">Experience</a></li> -->
+                <li><a id="contact" href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="landing-text">
+            <h1>Drew Kapnick</h1>
+            <h6>Computer Engineer &amp; Software Developer</h6>
+        </div>
+        <div class="logo"><a href="https://drewkapnick5.github.io/"><img src="/img/dk_logo_wix2.PNG" alt=""></a></div>
+
+
+    </header>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="profile-img wp1">
+                <img src="img/headshot-close4.jpeg" id="prof-img" alt="">
+            </div>
+            <div class="about-details">
+                <div class="about-heading">
+                    <h1>About Me</h1>
+                </div>
+                <p>Hello! My name is Drew and I am a recent graduate of Michigan State University with a degree in computer engineering. I am currently based in South-East, MI and looking for a job as a junior software engineer. If you are intersted in reaching out you can contact me below or take a look at my resume!</p>
+            </div>
+            <div class="email">
+                <a id="email-button" href="mailto:akapnick5@gmail.com" target="_blank">Get in Touch</a>
+            </div>
+            <div class="resume">
+                <a id="resume-button" href="Drew Kapnick Resume May 2020.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <!-- This footer was created by Brittany Chiang. Source Code here https://github.com/bchiang7/v1 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="list-inline social-buttons animated fadeIn">
+                        <!-- Facebook Button -->
+                        <li><a id="facebook" href="https://www.facebook.com/drew.kapnick" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <!-- Twitter Button -->
+                        <li><a id="twitter" href="https://twitter.com/drewkapnick5" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <!-- Instagram Button -->
+                        <li><a id="instagram" href="https://instagram.com/drewkapnick5/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <!-- Spotify Button -->
+                        <li><a id="spotify" href="https://play.spotify.com/user/drewkapnick5" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                        <!-- GitHub Button -->
+                        <li><a id="github" href="https://github.com/drewkapnick5" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <!-- LinkedIn Button -->
+                        <li><a id="linkedin" href="https://www.linkedin.com/in/drewkapnick5" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
-</html>
 
+</html>
