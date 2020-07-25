@@ -1,94 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head prefix="og: http://ogp.me/ns#">
-    <title>Drew Kapnick | Web Developer &amp; UX Enthusiast</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Drew Kapnick" />
-    <link rel="shortcut icon" href="img/dk_logo_wix2.PNG">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="css/scss.scss">
-    <link rel="stylesheet" type="text/css" href="fonts/Calibre/Calibre-Regular.woff">
-    <link rel="stylesheet" type="text/css" href="fonts/SFMono">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<html>
+<head>
+    <title>Drew Kapnick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100">
-    <header>
-        <div class="menu-btn" id="mbtn">
-            <div class="menu-btn_burger"></div>
-        </div>
-        <nav class="menu-nav">
-            <ul class="nav-list">
-                <li><a id="home" href="index.html" class="nav-link">Home</a></li>
-                <li><a id="about" href="#about" class="nav-link">About</a></li>
-                <!-- <li><a id="services" href="#services" class="nav-link">Services</a></li>
-                <li><a id="portfolio" href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a id="experience" href="#experience" class="nav-link">Experience</a></li> -->
-                <li><a id="contact" href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="landing-text">
-            <h1>Drew Kapnick</h1>
-            <h6>Computer Engineer &amp; Software Developer</h6>
-        </div>
-        <div class="logo"><a href="https://drewkapnick5.github.io/"><img src="/img/dk_logo_wix2.PNG" alt=""></a></div>
-
-
-    </header>
-    <section class="about" id="about">
-        <div class="container">
-            <div class="profile-img wp1">
-                <img src="img/headshot-close4.jpeg" id="prof-img" alt="">
+<body>
+    <section class="s1">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Drew Kapnick</h1>
             </div>
-            <div class="about-details">
-                <div class="about-heading">
-                    <h1>About Me</h1>
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>
+                        <div id="dot-3" class="browser-dot"></div>
+                    </div>
+                    <ul id="navigation">
+                        <li><a href="#">Contact</a></li>
+                        <!-- <li><a href="#">Contact</a></li> -->
+                    </ul>
                 </div>
-                <p>Hello! My name is Drew and I am a recent graduate of Michigan State University with a degree in computer engineering. I am currently based in South-East, MI and looking for a job as a junior software engineer. If you are intersted in reaching out you can contact me below or take a look at my resume!</p>
-            </div>
-            <div class="email">
-                <a id="email-button" href="mailto:akapnick5@gmail.com" target="_blank">Get in Touch</a>
-            </div>
-            <div class="resume">
-                <a id="resume-button" href="Drew Kapnick Resume May 2020.pdf" target="_blank">Resume</a>
+                <div class="left-column">
+                    <div id="img-shadow">
+                        <img id="profile_pic" src="images/headshot-close5.jpg" alt=""> 
+                    </div>
+                   
+                   <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+                   <div id="theme-options-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="red" id="red-mode" class="theme-dot"></div>
+                   </div>
+                   <p id="settings-note">Theme options will be saved</p>
+                </div>
+                <div class="right-column">
+                    <div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>About Me</h3>
+							<p>Junior Developer with a passion for programming, and currently looking for a new position.</p>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="s2">
+        <div class="main-container">
+            <div class="about-wrapper">
+				<div class="about-me">
+					<h4>More about me</h4>
 
-    <!-- Footer -->
-    <!-- This footer was created by Brittany Chiang. Source Code here https://github.com/bchiang7/v1 -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <ul class="list-inline social-buttons animated fadeIn">
-                        <!-- Facebook Button -->
-                        <li><a id="facebook" href="https://www.facebook.com/drew.kapnick" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <!-- Twitter Button -->
-                        <li><a id="twitter" href="https://twitter.com/drewkapnick5" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <!-- Instagram Button -->
-                        <li><a id="instagram" href="https://instagram.com/drewkapnick5/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        <!-- Spotify Button -->
-                        <li><a id="spotify" href="https://play.spotify.com/user/drewkapnick5" target="_blank"><i class="fab fa-spotify"></i></a></li>
-                        <!-- GitHub Button -->
-                        <li><a id="github" href="https://github.com/drewkapnick5" target="_blank"><i class="fab fa-github"></i></a></li>
-                        <!-- LinkedIn Button -->
-                        <li><a id="linkedin" href="https://www.linkedin.com/in/drewkapnick5" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+					<p>I recently graduated from Michigan State University with a degree in Computer Engineering.</p>
+
+					<p>I primarily build apps in Python and Android Studio that interest me and test my abilities.</p>
+
+
+					<hr>
+
+					<h4>TOP EXPERTISE</h4>
+
+					<p>Junior Developer with a primary focus in Python + Java: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+
+					<div id="skills">
+						<ul>
+							<li>Python</li>
+							<li>Java</li>
+							<li>JavaScript</li>
+							<li>React</li>
+						</ul>
+
+						<ul>
+							<li>Android Studio</li>
+							<li>HTML/CSS</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				
+				<div class="social-links">
+					<h3>Find me on GitHub and LinkedIn</h3>
+                    <a target="_blank" style="font-family: 'Roboto Mono';" href="https://github.com/drewkapnick5">Github: @DrewKapnick5</a>
+                    <a target="_blank" style="font-family: 'Roboto Mono';" href="https://www.linkedin.com/in/drewkapnick5/">LinkedIn: @DrewKapnick5</a>
+				</div>
+			</div>
         </div>
-        <!-- container -->
-    </footer>
+    </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="main.js"></script>
+    <section class="s1">
+        <div class="main-container">
+            <h3 style="text-align: center;">Some of my past projects</h3>
+
+			<div class="post-wrapper">
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/Tee Sheet.PNG">
+						<div class="post-preview">
+							<h6 class="post-title">Interactive Golf Tee Sheet</h6>
+							<p class="post-intro">Designed built & mantained using Google Sheets, Google Forms, and Google Apps Script</p>
+							<a style="font-family: 'Roboto Mono';" href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/ic_white.png">
+						<div class="post-preview">
+							<h6 class="post-title">Android Chess Application</h6>
+							<p class="post-intro">Online 2-Player chess game built using Android Studio and Google Firebase.</p>
+							<a style="font-family: 'Roboto Mono';" href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/tic_tac_toe.png">
+						<div class="post-preview">
+							<h6 class="post-title">MinMax Algorithm</h6>
+							<p class="post-intro">Python program designed to determine the best possible move in Tic-Tac-Toe using MinMax algorithm.</p>
+							<a style="font-family: 'Roboto Mono';" href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+            <a href="mailto:akapnick5@gmail.com"></a>
+			<h3 style="text-align: center;">Get In Touch</h3>
+
+			<form id="contact-form">
+				<a name="contact"></a>
+
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
-
 </html>
